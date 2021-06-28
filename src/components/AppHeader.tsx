@@ -3,7 +3,8 @@ interface AppHeaderProps {
 }
 
 function AppHeader({ title }: AppHeaderProps): JSX.Element {
-  return <h1>{title}</h1>;
+  return <h1 onClick={() => console.log("TITLE HERE!")} >{title}</h1>;
 }
 
 export default AppHeader;
+
